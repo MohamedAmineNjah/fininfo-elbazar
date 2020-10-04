@@ -1,0 +1,33 @@
+{
+  "elbazarApp": {
+    "mouvementStock": {
+      "home": {
+        "title": "MouvementStocks",
+        "createLabel": "Mouvement Stock",
+        "createOrEditLabel": "Créer ou éditer un Mouvement Stock",
+        "search": "Recherche pour Mouvement Stock",
+        "notFound": "Aucun Mouvement Stock trouvé"
+      },
+      "created": "Un nouveau Mouvement Stock a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Mouvement Stock avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Mouvement Stock avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Mouvement Stock {{ id }} ?"
+      },
+      "detail": {
+        "title": "Mouvement Stock"
+      },
+      "type": "Type",
+      "date": "Date",
+      "sens": "Sens",
+      "quantite": "Quantite",
+      "creeLe": "Cree Le",
+      "creePar": "Cree Par",
+      "modifieLe": "Modifie Le",
+      "modifiePar": "Modifie Par",
+      "reference": "Reference",
+      "refProduit": "Ref Produit",
+      "refCommande": "Ref Commande"
+    }
+  }
+}

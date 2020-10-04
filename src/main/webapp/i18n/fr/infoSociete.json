@@ -1,0 +1,40 @@
+{
+  "elbazarApp": {
+    "infoSociete": {
+      "home": {
+        "title": "InfoSocietes",
+        "createLabel": "Créer un nouveau Info Societe",
+        "createOrEditLabel": "Créer ou éditer un Info Societe",
+        "search": "Recherche pour Info Societe",
+        "notFound": "Aucun Info Societe trouvé"
+      },
+      "created": "Un nouveau Info Societe a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Info Societe avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Info Societe avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Info Societe {{ id }} ?"
+      },
+      "detail": {
+        "title": "Info Societe"
+      },
+      "nomSociete": "Nom Societe",
+      "adresse": "Adresse",
+      "tel1": "Tel 1",
+      "tel2": "Tel 2",
+      "tel3": "Tel 3",
+      "email1": "Email 1",
+      "email2": "Email 2",
+      "creeLe": "Cree Le",
+      "creePar": "Cree Par",
+      "modifieLe": "Modifie Le",
+      "modifiePar": "Modifie Par",
+      "facebook": "Facebook",
+      "youtube": "Youtube",
+      "instagram": "Instagram",
+      "twitter": "Twitter",
+      "tiktok": "Tiktok",
+      "matriculeFiscal": "Matricule Fiscal",
+      "valeurMinPanier": "Valeur Min Panier"
+    }
+  }
+}

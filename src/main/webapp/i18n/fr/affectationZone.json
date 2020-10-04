@@ -1,0 +1,31 @@
+{
+  "elbazarApp": {
+    "affectationZone": {
+      "home": {
+        "title": "AffectationZones",
+        "createLabel": "Créer un nouveau Affectation Zone",
+        "createOrEditLabel": "Créer ou éditer un Affectation Zone",
+        "search": "Recherche pour Affectation Zone",
+        "notFound": "Aucun Affectation Zone trouvé"
+      },
+      "created": "Un nouveau Affectation Zone a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Affectation Zone avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Affectation Zone avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Affectation Zone {{ id }} ?"
+      },
+      "detail": {
+        "title": "Affectation Zone"
+      },
+      "gouvernorat": "Gouvernorat",
+      "ville": "Ville",
+      "localite": "Localite",
+      "codePostal": "Code Postal",
+      "modifieLe": "Modifie Le",
+      "modifiePar": "Modifie Par",
+      "idVille": "Id Ville",
+      "adresse": "Adresse",
+      "zone": "Zone"
+    }
+  }
+}

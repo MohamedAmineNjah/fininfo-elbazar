@@ -1,0 +1,25 @@
+{
+  "elbazarApp": {
+    "produitUnite": {
+      "home": {
+        "title": "ProduitUnites",
+        "createLabel": "Créer un nouveau Produit Unite",
+        "createOrEditLabel": "Créer ou éditer un Produit Unite",
+        "search": "Recherche pour Produit Unite",
+        "notFound": "Aucun Produit Unite trouvé"
+      },
+      "created": "Un nouveau Produit Unite a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Produit Unite avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Produit Unite avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Produit Unite {{ id }} ?"
+      },
+      "detail": {
+        "title": "Produit Unite"
+      },
+      "code": "Code",
+      "nom": "Nom",
+      "produit": "Produit"
+    }
+  }
+}

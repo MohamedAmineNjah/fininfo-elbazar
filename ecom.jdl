@@ -1,0 +1,273 @@
+entity Categorie {
+    nom String required	unique// Nom de la catégorie
+    description String required 	// Description de la catégorie
+    position Integer required		// Position d'affichage
+    etat Boolean		// Gérer l'affichage des catégories
+	image ImageBlob required
+    creeLe LocalDate 	// Créé le
+    creePar String 		// Créé par 
+    modifieLe LocalDate 	// mise à jour le
+    modifiePar String 		// mise à jour par 
+}
+
+entity SousCategorie {
+    nom String required			// Designation sous catégorie
+    description String required	// Description sous catégorie
+    position Integer required	// Position d'affichage
+    etat Boolean 				// Gérer l'affichage des sous catégories
+    image ImageBlob required
+	creeLe LocalDate 			// Créé le
+    creePar String 		// Créé par 
+    modifieLe LocalDate 	// mise à jour le
+    modifiePar String 		// mise à jour par
+}
+
+entity Produit {
+	reference String required pattern(/^([\S]{1,25}$)*/)	unique// Référence produit
+    nom String required 		// Saisie manuelle par le back
+    codeBarre String 			// Designation produit
+    description String required		// Description produit
+    etat Boolean required	// Produit Acti / Incatif
+	marque String required		// Marque Produit  (Consommé de l'entitée PRODUITENUM)
+	nature String
+    stockMinimum Double	required		// Seuil min en Stock
+	quantiteVenteMax Double	required		// Quantité de vente max
+	horsStock Boolean		// Flag hors stock
+	typeService Boolean		// Produit gérer en stock ??
+	datePremption LocalDate	// Date de préemption
+    prixHT Double 	required		// Prix de vente HT unitaire
+    tauxTVA Double	required			// Valeur TVA Appliquée
+    prixTTC	Double	required			// Prix TTC
+	devise	Devise
+	sourceProduit	SourcePrd required		// Source du produit 
+    rating	String	pattern(/^[1-5]$/) 	// Score du produit 1-5
+	eligibleRemise	Boolean
+    remise	Double			// Remise promo / Produit
+    debutPromo	LocalDate	// Date début promo
+    finPromo		LocalDate	// Date fin promo
+    image ImageBlob required
+	creeLe LocalDate 		// Créé le
+    creePar String 			// Créé par 
+    modifieLe LocalDate 		// mise à jour le
+    modifiePar String 			// mise à jour par
+}
+enum SourcePrd{
+	Locale, Externe
+}
+
+entity ProduitUnite {
+	code	String pattern(/^([\S]{1,10}$)*/)
+    nom	String
+}
+
+entity Stock {
+//	Nom Catégorie			Relation
+//	Nom Sous Catégorie		Relation
+//	Réf Produit				Relation
+//	Nom Produit
+	stockReserve Double			// Qté en commande
+	stockCommande Double			// Qté en commande confirmée par l'administrateur
+	stockPhysique Double			// Quantité Physique
+    stockDisponible Double 			// Qté Disponible à la vente
+	stockMinimum	Double
+	derniereEntre LocalDate	// Date d'entrée en stock
+    derniereSortie LocalDate	// Date dernière sortie de stock
+	alerteStock Boolean			// Alerte stock minimum (Stock disponible - Qté limite prod <= 0)
+    creeLe LocalDate 		// Créé le
+    creePar String 			// Créé par 
+    modifieLe LocalDate 		// mise à jour le
+    modifiePar String 			// mise à jour par 
+}
+
+entity MouvementStock {
+//	Réf Produit			Relation
+//	Réf Commande		Relation
+//	Designation		
+	type TypeMvt			// Type mouvement stock 
+    date LocalDate			// Date mouvement (il peut aussi hériter la date de la livraison)
+    sens Integer			// 1: Entrée stock || -1: Sortie Stock ou Commande
+    quantite Double			// Qunatité entré ou sortie (valeur négative ou positive)
+    creeLe LocalDate 		// Créé le
+    creePar String 			// Créé par 
+    modifieLe LocalDate 	// mise à jour le
+    modifiePar String 		// mise à jour par 
+}
+enum TypeMvt {
+	EntreeStock, SortieStock, Commande
+}
+
+entity Client {
+    civilite Civilite required		// M. ou Mme.
+    prenom String required		// Prénom Client
+    nom String required			// Nom Client
+	dateDeNaissance LocalDate required	// Date de naissance 
+    email String required pattern(/^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/)	unique	// Adresse email principale
+    mobile Integer required			// Tél. Mobile principale du compte
+    reglement RegMod required			// Mode réglement préféré
+    etat Boolean// Définir le client actif ou inactif
+    inscription LocalDate
+    derniereVisite LocalDate		// Dernière visite
+    totalAchat Double		// Montant total de toutes les commandes
+	profile	ProfileClient required
+	pointsFidelite	Integer			// Nombre de points de fidélité cumulés
+    creeLe LocalDate 		// Créé le
+    creePar String 			// Créé par 
+    modifieLe LocalDate 		// mise à jour le
+    modifiePar String 			// mise à jour par
+}
+enum Civilite {
+	M, Mme
+}
+enum RegMod {
+	CarteBancaire, Cash, Cheque
+}
+enum ProfileClient {
+	Silver, Gold, Platinium
+}
+entity Adresse {
+    principale Boolean 	// Adresse par défaut du client Check box
+    prenom String required	// Nom du la personne a livrer (Par defaut prenom Client)
+	nom String required		// Nom du la personne a livrer (Par defaut Nom Client)
+	adresse String required 		// 1ere Ligne d'adresse
+    gouvernorat String required	// Selection du Gouvernorat
+    ville String required		// Selection de la ville
+    localite String required	// Selection de la cité (Localité)
+    indication String 			// Description de l'adresse : Indications aux livreurs
+	telephone Integer			// N. Tel pour cette livraison 
+    mobile Integer	required	// N. Tel mobile pour cette livraison (par défaut le mobile client)
+    creeLe LocalDate 			// Créé le
+    creePar String 				// Créé par 
+    modifieLe LocalDate 		// mise à jour le
+    modifiePar String 			// mise à jour par
+}
+entity GestionFidelite{
+	nom String required unique
+	points Integer required
+    valeur Double required
+    silverMin Integer required
+    silverMax Integer required
+    goldMin Integer required
+    goldMax Integer required
+    platiniumMin Integer required
+    platiniumMax Integer required
+	devise	Devise
+    etat Boolean
+    creeLe LocalDate 	// Créé le
+    creePar String 		// Créé par 
+    modifieLe LocalDate 	// mise à jour le
+    modifiePar String    
+}
+enum Devise {
+	TND, EUR, USD
+} 
+entity Commande {
+    reference String pattern(/^[a-zA-Z0-9]{0,12}$/)	unique	// Référence de la commande
+    date LocalDate			// Date de la commande
+    statut StatCmd			// Le statut de la commande a notifier
+    origine Origine 	// Le type du document qui change suivant une action  
+    totalHT Double				// Valeur totale HT
+    totalTVA Double			// Valeur totale TVA
+    totalRemise Double			// Valeur totale remise
+    totTTC Double			// Valeur totale TTC
+	devise	Devise
+    pointsFidelite	Integer
+//	zone	String					// Nom de la zone
+	reglement RegMod
+	dateLivraison LocalDate	// Date de livraison
+    dateCreation	LocalDate
+    dateAnnulation LocalDate
+
+	creeLe LocalDate 	// Créé le
+    creePar String 		// Créé par 
+    modifieLe LocalDate 	// mise à jour le
+    modifiePar String 		// mise à jour par
+}
+enum StatCmd {
+	Reservee, Commandee, Livraison, Livree, Annulee
+}
+enum Origine {	
+	Client, Admin
+}
+entity CommandeLignes {
+//	Réf. Commande			Relation
+//	Réf. Produit			Relation
+    quantite Double			// Quantité produit commandée
+    prixHT Double		// Prix unitaire HT
+	remise Double
+    tva Double		// Valeur unit TVA
+    prixTTC Double		// Prix total TTC 
+
+	creeLe LocalDate 	// Créé le
+    creePar String 		// Créé par 
+    modifieLe LocalDate 	// mise à jour le
+    modifiePar String 		// mise à jour par
+}
+entity Zone {
+	codeZone String pattern(/^([\S]{1,25}$)*/) unique
+    nom String 			// Nom de la zone créée 
+    creeLe LocalDate 	// Créé le
+    creePar String 		// Créé par 
+    modifieLe LocalDate 	// mise à jour le
+    modifiePar String 		// mise à jour par
+}
+entity Livraison {	// Au moment de la création d'une nouvelle zone
+					// il faut automatiquement alimenter cette table 
+	categorieClient ProfileClient	// Catégorie client : Silver / Cold / Platinium
+	intervalValeur Double	// Interval valeur commande
+    frais Double			// Cout livraison
+	date Integer 
+	creeLe LocalDate 	// Créé le
+    creePar String 		// Créé par 
+    modifieLe LocalDate 	// mise à jour le
+    modifiePar String 		// mise à jour par
+}
+
+entity AffectationZone {
+    gouvernorat String required
+    ville String required
+    localite String required
+    codePostal Integer required
+    modifieLe LocalDate 	// mise à jour le
+    modifiePar String 		// mise à jour par
+}
+
+entity InfoSociete {
+    nomSociete String required
+    adresse String required
+    tel1 Integer required
+    tel2 Integer required
+    tel3 Integer required
+	email1 String
+	email2 String
+	creeLe LocalDate 	// Créé le
+    creePar String 		// Créé par 
+    modifieLe LocalDate 	// mise à jour le
+    modifiePar String 		// mise à jour par
+}
+
+relationship OneToMany {
+Categorie 			to SousCategorie{Categorie(nom) },
+Categorie 			to Produit{Categorie(nom) },
+SousCategorie 		to Produit{SousCategorie(nom) },
+ProduitUnite		to Produit{unite(code)},
+Produit 			to Stock{refProduit(reference)},
+Categorie 			to Stock{idCategorie(nom)},
+SousCategorie 		to Stock{idSousCategorie(nom)},
+Produit 			to MouvementStock{refProduit(reference)},
+Commande 			to MouvementStock{refCommande(reference)},
+Client 				to Adresse{client(id) },
+Zone 				to Adresse{zone(nom)},
+AffectationZone		to Adresse{codePostal(codePostal) },
+Client				to Commande{idClient(id) },
+Adresse				to Commande{idAdresse(id) },
+Commande			to CommandeLignes{refCommande(reference) },
+Produit				to CommandeLignes{refProduit(reference) },
+Zone				to Livraison{zone(nom) },
+Zone				to AffectationZone{zone(nom)},
+Zone				to Commande{zone(nom)}
+}
+
+dto all with mapstruct
+service * with serviceClass
+paginate Produit, Client, Adresse, Commande, CommandeLignes, Stock, MouvementStock, AffectationZone with pagination
+filter *

@@ -1,0 +1,37 @@
+{
+  "elbazarApp": {
+    "gestionFidelite": {
+      "home": {
+        "title": "GestionFidelites",
+        "createLabel": "Créer un nouveau Gestion Fidelite",
+        "createOrEditLabel": "Créer ou éditer un Gestion Fidelite",
+        "search": "Recherche pour Gestion Fidelite",
+        "notFound": "Aucun Gestion Fidelite trouvé"
+      },
+      "created": "Un nouveau Gestion Fidelite a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Gestion Fidelite avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Gestion Fidelite avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Gestion Fidelite {{ id }} ?"
+      },
+      "detail": {
+        "title": "Gestion Fidelite"
+      },
+      "nom": "Nom",
+      "points": "Points",
+      "valeur": "Valeur",
+      "silverMin": "Silver Min",
+      "silverMax": "Silver Max",
+      "goldMin": "Gold Min",
+      "goldMax": "Gold Max",
+      "platiniumMin": "Platinium Min",
+      "platiniumMax": "Platinium Max",
+      "devise": "Devise",
+      "etat": "Etat",
+      "creeLe": "Cree Le",
+      "creePar": "Cree Par",
+      "modifieLe": "Modifie Le",
+      "modifiePar": "Modifie Par"
+    }
+  }
+}

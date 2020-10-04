@@ -1,0 +1,87 @@
+{
+  "name": "Stock",
+  "fields": [
+    {
+      "fieldName": "stockReserve",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "stockCommande",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "stockPhysique",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "stockDisponible",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "stockMinimum",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "derniereEntre",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "derniereSortie",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "alerteStock",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "creeLe",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "creePar",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "modifieLe",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "modifiePar",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "produit",
+      "otherEntityRelationshipName": "stock",
+      "relationshipName": "refProduit",
+      "otherEntityField": "reference"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "categorie",
+      "otherEntityRelationshipName": "stock",
+      "relationshipName": "idCategorie",
+      "otherEntityField": "nom"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "sousCategorie",
+      "otherEntityRelationshipName": "stock",
+      "relationshipName": "idSousCategorie",
+      "otherEntityField": "nom"
+    }
+  ],
+  "changelogDate": "20200526124704",
+  "entityTableName": "stock",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

@@ -1,0 +1,74 @@
+{
+  "name": "Livraison",
+  "fields": [
+    {
+      "fieldName": "categorieClient",
+      "fieldType": "ProfileClient",
+      "fieldValues": "Silver,Gold,Platinium"
+    },
+    {
+      "fieldName": "intervalValeur",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "frais",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "date",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "creeLe",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "creePar",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "modifieLe",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "modifiePar",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "valeurMin",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "valeurMax",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "dateLivraison",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "zone",
+      "otherEntityRelationshipName": "livraison",
+      "relationshipName": "zone",
+      "otherEntityField": "nom"
+    }
+  ],
+  "changelogDate": "20200526125504",
+  "entityTableName": "livraison",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*",
+  "searchEngine": "elasticsearch",
+  "databaseType": "sql"
+}

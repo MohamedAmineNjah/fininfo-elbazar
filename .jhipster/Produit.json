@@ -1,0 +1,193 @@
+{
+  "name": "Produit",
+  "fields": [
+    {
+      "fieldName": "reference",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "pattern", "unique"],
+      "fieldValidateRulesPattern": "^([\\S]{1,25}$)*"
+    },
+    {
+      "fieldName": "nom",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "codeBarre",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "etat",
+      "fieldType": "Boolean",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "marque",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "nature",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "stockMinimum",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "quantiteVenteMax",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "horsStock",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "typeService",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "datePremption",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "prixHT",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "tauxTVA",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "prixTTC",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "devise",
+      "fieldType": "Devise",
+      "fieldValues": "TND,EUR,USD"
+    },
+    {
+      "fieldName": "sourceProduit",
+      "fieldType": "SourcePrd",
+      "fieldValues": "Locale,Externe",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "rating",
+      "fieldType": "String",
+      "fieldValidateRules": ["pattern"],
+      "fieldValidateRulesPattern": "^[1-5]$"
+    },
+    {
+      "fieldName": "eligibleRemise",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "remise",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "debutPromo",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "finPromo",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "image",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "image",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "creeLe",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "creePar",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "modifieLe",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "modifiePar",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "enVedette",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "imageUrl",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "stock",
+      "otherEntityRelationshipName": "refProduit",
+      "relationshipName": "stock"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "mouvementStock",
+      "otherEntityRelationshipName": "refProduit",
+      "relationshipName": "mouvementStock"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "commandeLignes",
+      "otherEntityRelationshipName": "refProduit",
+      "relationshipName": "commandeLignes"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "categorie",
+      "otherEntityRelationshipName": "produit",
+      "relationshipName": "categorie",
+      "otherEntityField": "nom"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "sousCategorie",
+      "otherEntityRelationshipName": "produit",
+      "relationshipName": "sousCategorie",
+      "otherEntityField": "nom"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "produitUnite",
+      "otherEntityRelationshipName": "produit",
+      "relationshipName": "unite",
+      "otherEntityField": "code"
+    }
+  ],
+  "changelogDate": "20200526124504",
+  "entityTableName": "produit",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*",
+  "searchEngine": "elasticsearch",
+  "databaseType": "sql"
+}

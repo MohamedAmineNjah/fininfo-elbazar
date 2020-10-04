@@ -1,0 +1,97 @@
+{
+  "name": "InfoSociete",
+  "fields": [
+    {
+      "fieldName": "nomSociete",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "adresse",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "tel1",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "tel2",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "tel3",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "email1",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "email2",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "creeLe",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "creePar",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "modifieLe",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "modifiePar",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "facebook",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "youtube",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "instagram",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "twitter",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tiktok",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "matriculeFiscal",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "valeurMinPanier",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20200526125704",
+  "entityTableName": "info_societe",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*",
+  "searchEngine": "elasticsearch",
+  "databaseType": "sql"
+}

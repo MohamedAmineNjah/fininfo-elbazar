@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Grand+Hotel&family=Khand:wght@300;400&family=Lobster+Two:ital@1&family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Grand+Hotel&family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+.noBox {
+  box-shadow: none;
+}
+
+.label {
+  color: rgb(76, 77, 76);
+  font-weight: bold;
+  padding-right: 0.2rem;
+}
+
+.tab:nth-child(odd) {
+  background-color: rgb(241, 241, 241);
+}
+.commandeTitle {
+  font-family: 'Nova Round', cursive;
+  text-align: center;
+  padding: 3rem;
+  color: rgb(80, 79, 79);
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+}
+.imageBadge {
+  font-family: 'Nova Round', cursive;
+  text-align: center;
+
+  color: rgb(80, 79, 79);
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+}
+.color {
+  background-color: rgb(206, 187, 15);
+}
+.boutonVert {
+  background-color: #c41d28;
+}
+
+.paddingPoint {
+  padding: 0.7rem;
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+}

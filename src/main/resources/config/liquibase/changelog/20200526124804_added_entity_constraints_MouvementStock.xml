@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+    <!--
+        Added the constraints for entity MouvementStock.
+    -->
+    <changeSet id="20200526124804-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="ref_produit_id"
+                                 baseTableName="mouvement_stock"
+                                 constraintName="fk_mouvement_stock_ref_produit_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="produit"/>
+
+        <addForeignKeyConstraint baseColumnNames="ref_commande_id"
+                                 baseTableName="mouvement_stock"
+                                 constraintName="fk_mouvement_stock_ref_commande_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="commande"/>
+
+    </changeSet>
+</databaseChangeLog>

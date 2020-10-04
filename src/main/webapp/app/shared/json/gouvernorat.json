@@ -1,0 +1,101 @@
+{
+  "Gouvernorats": [
+    {
+      "value": 1,
+      "label": "Ariana"
+    },
+    {
+      "value": 2,
+      "label": "Béja"
+    },
+    {
+      "value": 3,
+      "label": "Ben Arous"
+    },
+    {
+      "value": 4,
+      "label": "Bizerte"
+    },
+    {
+      "value": 5,
+      "label": "Gabès"
+    },
+    {
+      "value": 6,
+      "label": "Gafsa"
+    },
+    {
+      "value": 7,
+      "label": "Jendouba"
+    },
+    {
+      "value": 8,
+      "label": "Kairouan"
+    },
+    {
+      "value": 9,
+      "label": "Kasserine"
+    },
+    {
+      "value": 10,
+      "label": "Kebili"
+    },
+    {
+      "value": 11,
+      "label": "Le Kef"
+    },
+    {
+      "value": 12,
+      "label": "Mahdia"
+    },
+    {
+      "value": 13,
+      "label": "Mannouba"
+    },
+    {
+      "value": 14,
+      "label": "Médenine"
+    },
+    {
+      "value": 15,
+      "label": "Monastir"
+    },
+    {
+      "value": 16,
+      "label": "Nabeul"
+    },
+
+    {
+      "value": 17,
+      "label": "Sfax"
+    },
+    {
+      "value": 18,
+      "label": "Sidi Bouzid"
+    },
+    {
+      "value": 19,
+      "label": "Siliana"
+    },
+    {
+      "value": 20,
+      "label": "Sousse"
+    },
+    {
+      "value": 21,
+      "label": "Tataouine"
+    },
+    {
+      "value": 22,
+      "label": "Tozeur"
+    },
+    {
+      "value": 23,
+      "label": "Tunis"
+    },
+    {
+      "value": 24,
+      "label": "Zaghouan"
+    }
+  ]
+}

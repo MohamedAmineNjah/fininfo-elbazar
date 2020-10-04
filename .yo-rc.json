@@ -1,0 +1,43 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "org.fininfo.elbazar",
+      "nativeLanguage": "fr"
+    },
+    "jhipsterVersion": "6.9.0",
+    "applicationType": "monolith",
+    "baseName": "elbazar",
+    "packageName": "org.fininfo.elbazar",
+    "packageFolder": "org/fininfo/elbazar",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "postgresql",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": "elasticsearch",
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "N2FkNzFhNTY0N2QwY2RhODk2MzlhMWUwYzY1YTE5ODdiYTJhNzc2NTgwYjEyZTk5M2Y0MjgzZWY0ODU3MmMzYTUyZDI0MGJkODIyYjZhMDUyNDkwYjFjZjVhYzAwY2I3MTdlY2RiYWE2ZTBkZjFhMTA3YmRiNDA5N2I4MjI2MTY=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "react",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "creationTimestamp": 1590155180998,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "fr",
+    "languages": ["fr"],
+    "blueprints": []
+  }
+}

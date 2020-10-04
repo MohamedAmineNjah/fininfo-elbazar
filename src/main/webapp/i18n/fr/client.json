@@ -1,0 +1,42 @@
+{
+  "elbazarApp": {
+    "client": {
+      "home": {
+        "title": "Clients",
+        "createLabel": "Créer un nouveau Client",
+        "createOrEditLabel": "Créer ou éditer un Client",
+        "search": "Recherche pour Client",
+        "notFound": "Aucun Client trouvé"
+      },
+      "created": "Un nouveau Client a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Client avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Client avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Client {{ id }} ?"
+      },
+      "detail": {
+        "title": "Client"
+      },
+      "civilite": "Civilite",
+      "prenom": "Prenom",
+      "nom": "Nom",
+      "dateDeNaissance": "Date De Naissance",
+      "email": "Email",
+      "mobile": "Mobile",
+      "reglement": "Reglement",
+      "etat": "Etat",
+      "inscription": "Inscription",
+      "derniereVisite": "Derniere Visite",
+      "totalAchat": "Total Achat",
+      "profile": "Profile",
+      "pointsFidelite": "Points Fidelite",
+      "creeLe": "Cree Le",
+      "creePar": "Cree Par",
+      "modifieLe": "Modifie Le",
+      "modifiePar": "Modifie Par",
+      "adresse": "Adresse",
+      "commande": "Commande",
+      "user": "User"
+    }
+  }
+}

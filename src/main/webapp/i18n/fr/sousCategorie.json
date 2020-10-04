@@ -1,0 +1,34 @@
+{
+  "elbazarApp": {
+    "sousCategorie": {
+      "home": {
+        "title": "SousCategories",
+        "createLabel": "Créer un nouveau Sous Categorie",
+        "createOrEditLabel": "Créer ou éditer un Sous Categorie",
+        "search": "Recherche pour Sous Categorie",
+        "notFound": "Aucun Sous Categorie trouvé"
+      },
+      "created": "Un nouveau Sous Categorie a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Sous Categorie avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Sous Categorie avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Sous Categorie {{ id }} ?"
+      },
+      "detail": {
+        "title": "Sous Categorie"
+      },
+      "nom": "Nom",
+      "description": "Description",
+      "position": "Position",
+      "etat": "Etat",
+      "image": "Image",
+      "creeLe": "Cree Le",
+      "creePar": "Cree Par",
+      "modifieLe": "Modifie Le",
+      "modifiePar": "Modifie Par",
+      "produit": "Produit",
+      "stock": "Stock",
+      "categorie": "Categorie"
+    }
+  }
+}

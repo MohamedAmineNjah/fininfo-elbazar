@@ -1,0 +1,33 @@
+{
+  "elbazarApp": {
+    "commandeLignes": {
+      "home": {
+        "title": "CommandeLignes",
+        "createLabel": "Créer un nouveau Commande Lignes",
+        "createOrEditLabel": "Créer ou éditer un Commande Lignes",
+        "search": "Recherche pour Commande Lignes",
+        "notFound": "Aucun Commande Lignes trouvé"
+      },
+      "created": "Un nouveau Commande Lignes a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Commande Lignes avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Commande Lignes avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Commande Lignes {{ id }} ?"
+      },
+      "detail": {
+        "title": "Commande Lignes"
+      },
+      "quantite": "Quantite",
+      "prixHT": "Prix HT",
+      "remise": "Remise",
+      "tva": "Tva",
+      "prixTTC": "Prix TTC",
+      "creeLe": "Cree Le",
+      "creePar": "Cree Par",
+      "modifieLe": "Modifie Le",
+      "modifiePar": "Modifie Par",
+      "refCommande": "Ref Commande",
+      "refProduit": "Ref Produit"
+    }
+  }
+}

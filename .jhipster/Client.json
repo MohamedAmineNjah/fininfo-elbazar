@@ -1,0 +1,122 @@
+{
+  "name": "Client",
+  "fields": [
+    {
+      "fieldName": "civilite",
+      "fieldType": "Civilite",
+      "fieldValues": "M,Mme",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "prenom",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "nom",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "dateDeNaissance",
+      "fieldType": "LocalDate",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "pattern", "unique"],
+      "fieldValidateRulesPattern": "^([a-zA-Z0-9_\\-\\.]+)@([a-zA-Z0-9_\\-\\.]+)\\.([a-zA-Z]{2,5})$"
+    },
+    {
+      "fieldName": "mobile",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "reglement",
+      "fieldType": "RegMod",
+      "fieldValues": "CarteBancaire,Cash,Cheque",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "etat",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "inscription",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "derniereVisite",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "totalAchat",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "profile",
+      "fieldType": "ProfileClient",
+      "fieldValues": "Silver,Gold,Platinium",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "pointsFidelite",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "creeLe",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "creePar",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "modifieLe",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "modifiePar",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "adresse",
+      "otherEntityRelationshipName": "client",
+      "relationshipName": "adresse"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "commande",
+      "otherEntityRelationshipName": "idClient",
+      "relationshipName": "commande"
+    },
+    {
+      "relationshipName": "user",
+      "otherEntityName": "user",
+      "relationshipType": "one-to-one",
+      "relationshipValidateRules": ["required"],
+      "otherEntityField": "login",
+      "ownerSide": true,
+      "useJPADerivedIdentifier": true,
+      "otherEntityRelationshipName": "client"
+    }
+  ],
+  "changelogDate": "20200526124904",
+  "entityTableName": "client",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*",
+  "searchEngine": "elasticsearch",
+  "databaseType": "sql"
+}

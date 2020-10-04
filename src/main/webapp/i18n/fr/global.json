@@ -1,0 +1,211 @@
+{
+  "global": {
+    "title": "Elbazar Back Office",
+    "browsehappy": "Vous utilisez un <strong>ancien</strong> navigateur. Veuillez <a href=\"http://browsehappy.com/?locale=fr\">mettre à jour votre navigateur</a> pour une meilleure expérience.",
+    "menu": {
+      "home": "Accueil",
+      "panier": "Panier",
+      "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
+      "entities": {
+        "main": "Menu",
+        "categorie": "Categorie",
+        "sousCategorie": "Sous Categorie",
+        "produit": "Produit",
+        "produitUnite": "Produit Unite",
+        "stock": "Stock",
+        "mouvementStock": "Mouvement Stock",
+        "client": "Client",
+        "adresse": "Adresse",
+        "gestionFidelite": "Gestion Fidelite",
+        "commande": "Commande",
+        "commandeLignes": "Commande Lignes",
+        "zone": "Zone",
+        "livraison": "Livraison",
+        "affectationZone": "Affectation Zone",
+        "infoSociete": "Info Societe",
+        "slides": "Slides",
+        "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
+      },
+      "account": {
+        "main": "Compte",
+        "settings": "Profil",
+        "password": "Mot de passe",
+        "sessions": "Sessions",
+        "login": "S'authentifier",
+        "logout": "Déconnexion",
+        "register": "Créer un compte"
+      },
+      "admin": {
+        "main": "Administration",
+        "userManagement": "Gestion des utilisateurs",
+        "tracker": "Suivi des utilisateurs",
+        "metrics": "Métriques",
+        "health": "Diagnostics",
+        "configuration": "Configuration",
+        "logs": "Logs",
+        "audits": "Audits",
+        "apidocs": "API",
+        "database": "Base de données",
+        "jhipster-needle-menu-add-admin-element": "JHipster will add additional menu entries here (do not translate!)"
+      },
+      "language": "Langue"
+    },
+    "form": {
+      "lastName.label": "Nom",
+      "firstName.label": "Prenom ",
+      "lastName.placeholder": "nom*",
+      "firstName.placeholder": "prenom*",
+      "birthDate.label": "Date de naissance*",
+      "username.label": "Nom d'utilisateur",
+      "username.placeholder": "Votre nom d'utilisateur*",
+      "tel.label": "Téléphone",
+      "tel.placeholder": "Votre numéro de téléphone*",
+      "currentpassword.label": "Mot de passe actuel",
+      "currentpassword.placeholder": "Mot de passe actuel",
+      "password.label": "Mot de passe",
+      "newpassword.label": "Nouveau mot de passe",
+      "newpassword.placeholder": "Nouveau mot de passe*",
+      "confirmpassword.label": "Confirmation mot de passe",
+      "userInfo": "Informations personnelles",
+      "cgu": "Conditions générales",
+      "confirmpassword.placeholder": "Confirmation mot de passe*",
+      "email.label": "Email",
+      "email.placeholder": "Votre adresse e-mail*",
+      "avenue.label": "Avenue",
+      "ville.label": "ville",
+      "ville.placeholder": "ville*",
+      "gouvernorat.name": "gouvernorat",
+      "gouvernorat.placeholder": "gouvernorat*",
+      "address": "adresse",
+      "codePostale.label": "code postale",
+      "codePostale.placeholder": "code postale*",
+      "commentaireLibre.name": "commentaire libre",
+      "commentaireLibre.placeholder": "commantaire libre"
+    },
+    "messages": {
+      "info": {
+        "authenticated": {
+          "prefix": "Si vous voulez vous ",
+          "link": "connecter",
+          "suffix": ", vous pouvez utiliser les comptes par défaut : <br/> - Administrateur (nom d'utilisateur=\"admin\" et mot de passe =\"admin\") <br/> - Utilisateur (nom d'utilisateur=\"user\" et mot de passe =\"user\")."
+        },
+        "register": {
+          "noaccount": "Vous n'avez pas encore de compte ?",
+          "noaccountback": "Vous n'avez pas encore de compte, contactez votre administrateur ?",
+          "link": "Créer un compte"
+        }
+      },
+      "error": {
+        "dontmatch": "Le nouveau mot de passe et sa confirmation ne sont pas égaux !"
+      },
+      "validate": {
+        "newpassword": {
+          "required": "Votre mot de passe est requis.",
+          "minlength": "Votre mot de passe doit comporter au moins 8 caractères.",
+          "maxlength": "Votre mot de passe ne doit pas comporter plus de 50 caractères.",
+          "invalid": "Votre message doit contenir au moins : 1 majuscule 1 minuscule 1 chiffre ",
+          "strength": "Robustesse du mot de passe :",
+          "showPassword": "Afficher le mot de passe",
+          "NewsletterAccept": "J'accepte de recevoir les news letters et les offres promotionnelles",
+          "CguAccept1": "J'accepte ",
+          "CguAccept2": "d'utilisation et je reconnais avoir lu "
+        },
+        "tel": {
+          "required": "Votre numero de téléphonne est requise.",
+          "invalid": "Votre numero de téléphonne doit étre composer de 8 chiffres"
+        },
+        "avenue": {
+          "required": "veuillez renseigner le numéro la rue et l'avenue."
+        },
+        "ville": {
+          "invalid": "la ville doit étre composée de carractaires alphabétique uniquement",
+          "required": "veuillez renseigner la ville."
+        },
+        "codep": {
+          "invalid": "le code postal doit etre composé de 4 chiffres",
+          "required": "veuillez renseigner le code postal."
+        },
+        "gouvernorat": {
+          "invalid": "le gouvernorat doit étre composée de carractaires alphabétique uniquement",
+          "required": "veuillez renseigner le gouvernorat."
+        },
+        "confirmpassword": {
+          "required": "Votre confirmation du mot de passe est requise.",
+          "minlength": "Votre confirmation du mot de passe doit comporter au moins 4 caractères.",
+          "maxlength": "Votre confirmation du mot de passe ne doit pas comporter plus de 50 caractères."
+        },
+        "email": {
+          "required": "Votre email est requis.",
+          "minlength": "Votre email doit comporter au moins 5 caractères.",
+          "maxlength": "Votre email ne doit pas comporter plus de 50 caractères.",
+          "invalid": "Votre email n'est pas valide."
+        }
+      }
+    },
+    "field": {
+      "id": "ID"
+    },
+    "ribbon": {
+      "dev": "Développement"
+    },
+    "item-count": "Affichage {{first}} - {{second}} de {{total}} items."
+  },
+  "entity": {
+    "action": {
+      "addblob": "Ajouter blob",
+      "addimage": "Ajouter image",
+      "back": "Retour",
+      "cancel": "Annuler",
+      "edit": "Editer",
+      "delete": "Supprimer",
+      "open": "Ouvrir",
+      "save": "Sauvegarder",
+      "view": "Voir"
+    },
+    "detail": {
+      "field": "Champs",
+      "value": "Valeur"
+    },
+    "delete": {
+      "title": "Confirmation de suppression"
+    },
+    "validation": {
+      "required": "Ce champ est obligatoire.",
+      "minlength": "Ce champ doit faire au minimum {{min}} caractères.",
+      "maxlength": "Ce champ doit faire moins de {{max}} caractères.",
+      "phonelength": "Votre numéro doit avoir 8 chiffre.",
+      "min": "Ce champ doit être supérieur à {{min}}.",
+      "max": "Ce champ doit être inférieur à {{max}}.",
+      "minbytes": "Ce champ doit être supérieur à {{min}} bytes.",
+      "maxbytes": "Ce champ doit être inférieur à {{max}} bytes.",
+      "pattern": "Ce champ doit suivre l'expression régulière {{pattern}}.",
+      "number": "Ce champ doit être un nombre.",
+      "alphabetique": "Ce champ doit être de type alphabétique.",
+      "alphabetiquenospace": "Ce champ ne doit pas contenire des espaces et caractères spéciaux.",
+      "alphanumerique": "Ce champ ne doit pas contenire des caractères spéciaux.",
+      "datetimelocal": "Ce champ doit être une date et une heure.",
+      "patternLogin": "Ce champ ne peut contenir que des lettres, des chiffres ou des adresses e-mail."
+    }
+  },
+  "error": {
+    "internalServerError": "Erreur interne du serveur",
+    "server.not.reachable": "Serveur inaccessible",
+    "url.not.found": "Non trouvé",
+    "NotNull": "Le champ {{fieldName}} ne peut pas être vide !",
+    "Size": "Le champ {{fieldName}} ne respecte pas les critères minimum et maximum !",
+    "userexists": "Login déjà utilisé !",
+    "emailexists": "Email déjà utilisé !",
+    "zoneexists": "<strong>La zone existe déjà !</strong> Veuillez choisir un autre code.",
+    "produitexists": "<strong>La produit existe déjà !</strong> Veuillez choisir une autre référence.",
+    "produituniteexists": "<strong>L'unité produit existe déjà !</strong> Veuillez choisir un autre code.",
+    "souscategorieexists": "<strong>Sous Catégorie existe déjà !</strong> Veuillez choisir un autre nom.",
+    "stockdisponegatif": "<strong>Stock disponible négatif non autorisé !</strong> Veuillez modifier la quantité.",
+    "idexists": "Une nouvelle entité {{entityName}} ne peut pas avoir d'identifiant !",
+    "idnull": "Identifiant invalide",
+    "file": {
+      "could.not.extract": "Impossible d'extraire le fichier",
+      "not.image": "Le fichier doit être une image et non du type \"{{ fileType }}\""
+    }
+  },
+  "footer": "Ceci est votre pied de page"
+}

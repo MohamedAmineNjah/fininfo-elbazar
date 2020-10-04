@@ -1,0 +1,40 @@
+{
+  "elbazarApp": {
+    "adresse": {
+      "home": {
+        "title": "Adresses",
+        "createLabel": "Créer un nouveau Adresse",
+        "createOrEditLabel": "Créer ou éditer un Adresse",
+        "search": "Recherche pour Adresse",
+        "notFound": "Aucun Adresse trouvé"
+      },
+      "created": "Un nouveau Adresse a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Adresse avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Adresse avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Adresse {{ id }} ?"
+      },
+      "detail": {
+        "title": "Adresse"
+      },
+      "principale": "Principale",
+      "prenom": "Prenom",
+      "nom": "Nom",
+      "adresse": "Adresse",
+      "gouvernorat": "Gouvernorat",
+      "ville": "Ville",
+      "localite": "Localite",
+      "indication": "Indication",
+      "telephone": "Telephone",
+      "mobile": "Mobile",
+      "creeLe": "Cree Le",
+      "creePar": "Cree Par",
+      "modifieLe": "Modifie Le",
+      "modifiePar": "Modifie Par",
+      "commande": "Commande",
+      "client": "Client",
+      "zone": "Zone",
+      "codePostal": "Code Postal"
+    }
+  }
+}

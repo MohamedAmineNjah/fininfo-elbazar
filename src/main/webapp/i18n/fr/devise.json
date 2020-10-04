@@ -1,0 +1,10 @@
+{
+  "elbazarApp": {
+    "Devise": {
+      "null": "",
+      "TND": "TND",
+      "EUR": "EUR",
+      "USD": "USD"
+    }
+  }
+}

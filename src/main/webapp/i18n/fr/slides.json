@@ -1,0 +1,26 @@
+{
+  "elbazarApp": {
+    "slides": {
+      "home": {
+        "title": "Slides",
+        "createLabel": "Créer un nouveau Slides",
+        "createOrEditLabel": "Créer ou éditer un Slides",
+        "search": "Recherche pour Slides",
+        "notFound": "Aucun Slides trouvé"
+      },
+      "created": "Un nouveau Slides a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Slides avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Slides avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Slides {{ id }} ?"
+      },
+      "detail": {
+        "title": "Slides"
+      },
+      "nom": "Nom",
+      "image": "Image",
+      "type": "Type",
+      "lien": "Lien"
+    }
+  }
+}

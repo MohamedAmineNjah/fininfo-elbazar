@@ -1,0 +1,68 @@
+{
+  "name": "Zone",
+  "fields": [
+    {
+      "fieldName": "codeZone",
+      "fieldType": "String",
+      "fieldValidateRules": ["pattern", "unique"],
+      "fieldValidateRulesPattern": "^([\\S]{1,25}$)*"
+    },
+    {
+      "fieldName": "nom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "creeLe",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "creePar",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "modifieLe",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "modifiePar",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "adresse",
+      "otherEntityRelationshipName": "zone",
+      "relationshipName": "adresse"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "livraison",
+      "otherEntityRelationshipName": "zone",
+      "relationshipName": "livraison"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "affectationZone",
+      "otherEntityRelationshipName": "zone",
+      "relationshipName": "affectationZone"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "commande",
+      "otherEntityRelationshipName": "zone",
+      "relationshipName": "commande"
+    }
+  ],
+  "changelogDate": "20200526125404",
+  "entityTableName": "zone",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

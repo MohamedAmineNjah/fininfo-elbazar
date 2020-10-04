@@ -1,0 +1,175 @@
+{
+  "name": "Commande",
+  "fields": [
+    {
+      "fieldName": "reference",
+      "fieldType": "String",
+      "fieldValidateRules": ["pattern", "unique"],
+      "fieldValidateRulesPattern": "^[a-zA-Z0-9]{0,12}$"
+    },
+    {
+      "fieldName": "date",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "statut",
+      "fieldType": "StatCmd",
+      "fieldValues": "Reservee,Commandee,Livraison,Livree,Annulee"
+    },
+    {
+      "fieldName": "origine",
+      "fieldType": "Origine",
+      "fieldValues": "Client,Admin"
+    },
+    {
+      "fieldName": "totalHT",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "totalTVA",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "totalRemise",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "totTTC",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "devise",
+      "fieldType": "Devise",
+      "fieldValues": "TND,EUR,USD"
+    },
+    {
+      "fieldName": "pointsFidelite",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "reglement",
+      "fieldType": "RegMod",
+      "fieldValues": "CarteBancaire,Cash,Cheque"
+    },
+    {
+      "fieldName": "dateLivraison",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "dateCreation",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "dateAnnulation",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "creeLe",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "creePar",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "modifieLe",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "modifiePar",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "prenom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "adresse",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "gouvernorat",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "ville",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "localite",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "codePostal",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "indication",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "telephone",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "mobile",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "fraisLivraison",
+      "fieldType": "Double"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "mouvementStock",
+      "otherEntityRelationshipName": "refCommande",
+      "relationshipName": "mouvementStock"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "commandeLignes",
+      "otherEntityRelationshipName": "refCommande",
+      "relationshipName": "commandeLignes"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "client",
+      "otherEntityRelationshipName": "commande",
+      "relationshipName": "idClient",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "adresse",
+      "otherEntityRelationshipName": "commande",
+      "relationshipName": "idAdresse",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "zone",
+      "otherEntityRelationshipName": "commande",
+      "relationshipName": "zone",
+      "otherEntityField": "nom"
+    }
+  ],
+  "changelogDate": "20200526125204",
+  "entityTableName": "commande",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*",
+  "searchEngine": "elasticsearch",
+  "databaseType": "sql"
+}

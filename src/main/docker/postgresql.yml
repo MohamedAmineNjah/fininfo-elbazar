@@ -1,0 +1,11 @@
+version: '2'
+services:
+  elbazar-postgresql:
+    image: postgres:12.1
+    # volumes:
+    #     - ~/volumes/jhipster/elbazar/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=elbazar
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432

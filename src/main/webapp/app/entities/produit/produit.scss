@@ -1,0 +1,48 @@
+.test {
+  height: 34px;
+  width: 34px;
+}
+.productborder {
+  border: 2px solid rgba(0, 0, 0, 0.15); //1px solid #00000059;
+  border-style: groove;
+  background: #fff;
+  //width: 513px;
+  padding: 20px;
+}
+.bordertitle {
+  text-align: center;
+  background-color: white;
+  display: flex;
+  margin-top: -38px;
+  padding: 6px 4px 5px 6px;
+  width: fit-content;
+}
+#adresse-principale {
+  margin-left: 1.75rem;
+}
+
+#categorie-etat {
+  margin-left: 4rem;
+}
+#sous-categorie-etat {
+  margin-left: 5rem;
+}
+#client-etat {
+  margin-left: 5rem;
+}
+#produit-etat {
+  margin-left: 5rem;
+}
+
+#card {
+  box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.253) !important;
+}
+.card-body {
+  padding: 3rem 0 !important;
+}
+
+// .productborder:hover {
+//   border: none;
+//   width: 260px;
+//   padding: 20px;
+// }

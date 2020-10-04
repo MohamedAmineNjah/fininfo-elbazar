@@ -1,0 +1,65 @@
+{
+  "name": "AffectationZone",
+  "fields": [
+    {
+      "fieldName": "gouvernorat",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "ville",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "localite",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "codePostal",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "modifieLe",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "modifiePar",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "idVille",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "adresse",
+      "otherEntityRelationshipName": "codePostal",
+      "relationshipName": "adresse"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "zone",
+      "otherEntityRelationshipName": "affectationZone",
+      "relationshipName": "zone",
+      "otherEntityField": "nom"
+    }
+  ],
+  "changelogDate": "20200526125604",
+  "entityTableName": "affectation_zone",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*",
+  "searchEngine": "elasticsearch",
+  "databaseType": "sql"
+}

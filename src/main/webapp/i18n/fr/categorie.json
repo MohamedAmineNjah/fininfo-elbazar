@@ -1,0 +1,34 @@
+{
+  "elbazarApp": {
+    "categorie": {
+      "home": {
+        "title": "Liste des catégories",
+        "createLabel": "Créer une nouvelle Catégorie",
+        "createOrEditLabel": "Créer ou éditer une Categorie",
+        "search": "Recherche pour Categorie",
+        "notFound": "Aucun Categorie trouvé"
+      },
+      "created": "Un nouveau Categorie a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Categorie avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Categorie avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Categorie {{ id }} ?"
+      },
+      "detail": {
+        "title": "Categorie"
+      },
+      "nom": "Nom",
+      "description": "Description",
+      "position": "Position",
+      "etat": "Etat",
+      "image": "Image",
+      "creeLe": "Cree Le",
+      "creePar": "Cree Par",
+      "modifieLe": "Modifie Le",
+      "modifiePar": "Modifie Par",
+      "sousCategorie": "Sous Categorie",
+      "produit": "Produit",
+      "stock": "Stock"
+    }
+  }
+}

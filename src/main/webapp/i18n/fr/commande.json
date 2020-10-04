@@ -1,0 +1,56 @@
+{
+  "elbazarApp": {
+    "commande": {
+      "home": {
+        "title": "Commandes",
+        "createLabel": "Créer une nouvelle Commande",
+        "createOrEditLabel": "Créer ou éditer une Commande",
+        "search": "Recherche pour Commande",
+        "notFound": "Aucun Commande trouvé"
+      },
+      "created": "Un nouveau Commande a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Commande avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Commande avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer la Commande {{ id }} ?"
+      },
+      "detail": {
+        "title": "Commande"
+      },
+      "reference": "Reference",
+      "date": "Date",
+      "statut": "Statut",
+      "origine": "Origine",
+      "totalHT": "Total HT",
+      "totalTVA": "Total TVA",
+      "totalRemise": "Total Remise",
+      "totTTC": "Total TTC (TND)",
+      "devise": "Devise",
+      "pointsFidelite": "Points Fidelite",
+      "reglement": "Reglement",
+      "dateLivraison": "Date Livraison",
+      "dateCreation": "Date Creation",
+      "dateAnnulation": "Date Annulation",
+      "creeLe": "Cree Le",
+      "creePar": "Cree Par",
+      "modifieLe": "Modifie Le",
+      "modifiePar": "Modifie Par",
+      "prenom": "Prenom",
+      "nom": "Nom",
+      "adresse": "Adresse",
+      "gouvernorat": "Gouvernorat",
+      "ville": "Ville",
+      "localite": "Localite",
+      "codePostal": "Code Postal",
+      "indication": "Indication",
+      "telephone": "Telephone",
+      "mobile": "Mobile",
+      "fraisLivraison": "Frais Livraison",
+      "mouvementStock": "Mouvement Stock",
+      "commandeLignes": "Commande Lignes",
+      "idClient": "Id Client",
+      "idAdresse": "Id Adresse",
+      "zone": "Zone"
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "name": "CommandeLignes",
+  "fields": [
+    {
+      "fieldName": "quantite",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "prixHT",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "remise",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "tva",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "prixTTC",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "creeLe",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "creePar",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "modifieLe",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "modifiePar",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "commande",
+      "otherEntityRelationshipName": "commandeLignes",
+      "relationshipName": "refCommande",
+      "otherEntityField": "reference"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "produit",
+      "otherEntityRelationshipName": "commandeLignes",
+      "relationshipName": "refProduit",
+      "otherEntityField": "reference"
+    }
+  ],
+  "changelogDate": "20200526125304",
+  "entityTableName": "commande_lignes",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

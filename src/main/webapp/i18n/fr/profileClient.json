@@ -1,0 +1,10 @@
+{
+  "elbazarApp": {
+    "ProfileClient": {
+      "null": "",
+      "Silver": "Silver",
+      "Gold": "Gold",
+      "Platinium": "Platinium"
+    }
+  }
+}

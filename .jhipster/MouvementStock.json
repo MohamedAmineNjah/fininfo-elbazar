@@ -1,0 +1,71 @@
+{
+  "name": "MouvementStock",
+  "fields": [
+    {
+      "fieldName": "type",
+      "fieldType": "TypeMvt",
+      "fieldValues": "EntreeStock,SortieStock,Commande"
+    },
+    {
+      "fieldName": "date",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "sens",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "quantite",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "creeLe",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "creePar",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "modifieLe",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "modifiePar",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "reference",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "produit",
+      "otherEntityRelationshipName": "mouvementStock",
+      "relationshipName": "refProduit",
+      "otherEntityField": "reference"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "commande",
+      "otherEntityRelationshipName": "mouvementStock",
+      "relationshipName": "refCommande",
+      "otherEntityField": "reference"
+    }
+  ],
+  "changelogDate": "20200526124804",
+  "entityTableName": "mouvement_stock",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*",
+  "searchEngine": "elasticsearch",
+  "databaseType": "sql"
+}

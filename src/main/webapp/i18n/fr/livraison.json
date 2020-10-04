@@ -1,0 +1,34 @@
+{
+  "elbazarApp": {
+    "livraison": {
+      "home": {
+        "title": "Livraisons",
+        "createLabel": "Créer un nouveau Livraison",
+        "createOrEditLabel": "Créer ou éditer un Livraison",
+        "search": "Recherche pour Livraison",
+        "notFound": "Aucun Livraison trouvé"
+      },
+      "created": "Un nouveau Livraison a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Livraison avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Livraison avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Livraison {{ id }} ?"
+      },
+      "detail": {
+        "title": "Livraison"
+      },
+      "categorieClient": "Categorie Client",
+      "intervalValeur": "Interval Valeur",
+      "frais": "Frais",
+      "date": "Date",
+      "creeLe": "Cree Le",
+      "creePar": "Cree Par",
+      "modifieLe": "Modifie Le",
+      "modifiePar": "Modifie Par",
+      "valeurMin": "Valeur Min",
+      "valeurMax": "Valeur Max",
+      "dateLivraison": "Date Livraison",
+      "zone": "Zone"
+    }
+  }
+}

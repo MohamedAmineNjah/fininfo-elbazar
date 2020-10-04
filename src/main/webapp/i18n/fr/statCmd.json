@@ -1,0 +1,12 @@
+{
+  "elbazarApp": {
+    "StatCmd": {
+      "null": "",
+      "Reservee": "Commandée",
+      "Commandee": "Confirmée",
+      "Livraison": "En cours de livraison",
+      "Livree": "Livrée",
+      "Annulee": "Annulée"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "elbazarApp": {
+    "RegMod": {
+      "null": "",
+      "CarteBancaire": "CarteBancaire",
+      "Cash": "Cash",
+      "Cheque": "Cheque"
+    }
+  }
+}

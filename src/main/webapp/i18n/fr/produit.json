@@ -1,0 +1,57 @@
+{
+  "elbazarApp": {
+    "produit": {
+      "home": {
+        "title": "Produits",
+        "createLabel": "Créer un nouveau Produit",
+        "createOrEditLabel": "Créer ou éditer un Produit",
+        "search": "Recherche pour Produit",
+        "notFound": "Aucun Produit trouvé"
+      },
+      "created": "Un nouveau Produit a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Produit avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Produit avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Produit {{ id }} ?"
+      },
+      "detail": {
+        "title": "Produit"
+      },
+      "reference": "Reference",
+      "nom": "Nom",
+      "codeBarre": "Code Barre",
+      "description": "Description",
+      "etat": "Etat",
+      "marque": "Marque",
+      "nature": "Nature",
+      "stockMinimum": "Stock Minimum",
+      "quantiteVenteMax": "Quantite Vente Max",
+      "horsStock": "Hors Stock",
+      "typeService": "Type Service",
+      "datePremption": "Date Premption",
+      "prixHT": "Prix HT",
+      "tauxTVA": "Taux TVA",
+      "prixTTC": "Prix TTC",
+      "devise": "Devise",
+      "sourceProduit": "Source Produit",
+      "rating": "Rating",
+      "eligibleRemise": "Eligible Remise",
+      "remise": "Remise",
+      "debutPromo": "Debut Promo",
+      "finPromo": "Fin Promo",
+      "image": "Image",
+      "creeLe": "Cree Le",
+      "creePar": "Cree Par",
+      "modifieLe": "Modifie Le",
+      "modifiePar": "Modifie Par",
+      "enVedette": "En Vedette",
+      "imageUrl": "Image Url",
+      "stock": "Stock",
+      "mouvementStock": "Mouvement Stock",
+      "commandeLignes": "Commande Lignes",
+      "categorie": "Categorie",
+      "sousCategorie": "Sous Categorie",
+      "unite": "Unite"
+    }
+  }
+}

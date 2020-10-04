@@ -1,0 +1,10 @@
+{
+  "elbazarApp": {
+    "TypeMvt": {
+      "null": "",
+      "EntreeStock": "EntreeStock",
+      "SortieStock": "SortieStock",
+      "Commande": "Commande"
+    }
+  }
+}
